@@ -1,54 +1,6 @@
-# Astro Boilerplate with React, TypeScript and Tailwind CSS [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+# Astro Boilerplate with <ins>Svelte</ins>, TypeScript and Tailwind CSS
 
-🚀 Astro Boilerplate is starter code for your blog or portfolio based on Astro with React and Tailwind CSS 3.0. ⚡️ Made with Astro, TypeScript, ESLint, Prettier, Tailwind CSS.
-
-Clone this project and use it to create your own Astro blog. You can check the [Astro templates demo](https://creativedesignsguru.com/demo/astro-boilerplate/).
-
-Building a SaaS? Check out our [SaaS Boilerplate](https://nextlessjs.com) built with React, TypeScript and Tailwind CSS. It includes a complete authentication system with email/password, Google, Facebook, Apple and Amazon. You'll also find a complete Stripe integration with a subscription system and a multi-tenant architecture with team support.
-
-### Features
-
-A complete Blog feature:
-
-- 🎈 Syntax Highlighting
-- 🤖 SEO friendly with sitemap.xml and robots.txt
-- ⚙️ RSS feed
-- 📖 Pagination
-- 🌈 Include a dark blog theme
-- ⬇️ Markdown
-- 📦 Image lazy loading
-- 💎 Responsive design
-
-Developer experience first:
-
-- 🔥 Astro with React
-- 🎨 Tailwind CSS with aspect ratio and typography plugin
-- 🎉 TypeScript
-- ✏️ ESLint compatible with .astro files
-- 🛠 Prettier compatible with .astro files
-- 🦊 Husky
-- 🚫 lint-staged
-- 🚨 Commitlint
-- 🔧 One-click deploy on Netlify (or, manual if you prefer)
-
-ESLint with:
-
-- Airbnb styled guide
-- TypeScript compatible
-- Astro compatible
-- Automatically remove unused imports
-- Import sorting
-- Tailwind CSS plugin
-
-### Philosophy
-
-- Minimal code
-- SEO-friendly
-- 🚀 Production-ready
-
-### Requirements
-
-- Node.js and npm
+> This is a fork from [ixartz/astro-boilerplate-components](https://github.com/ixartz/astro-boilerplate-components) that allows you to transform the React Components into Svelte Components.
 
 ### Getting started
 
@@ -60,6 +12,23 @@ cd my-project-name
 npm install
 ```
 
+Change the dependency from `astro-boilerplate-components` to `astro-boilerplate-components-svelte`
+
+```
+npm uninstall astro-boilerplate-components
+npm install astro-boilerplate-components-svelte
+```
+
+Change the astro react adapter into a svelte adapter: 
+
+```
+npm uninstall @astrojs/react
+npm install @astrojs/svelte
+```
+
+Now you can adjust the components in `/partials` like e.g. `BlogPost.tsx` by creating `BlogPost.svelte`. And referencing the components from this package.
+
+
 Then, you can run locally in development mode with live reload:
 
 ```
@@ -68,43 +37,10 @@ npm run dev
 
 Open http://localhost:3000 with your favorite browser to see your project.
 
-### Deploy to production (manual)
-
-You can create an optimized production build with:
-
-```shell
-npm run build-prod
-```
-
-Now, your blog is ready to be deployed. All generated files are located at `dist` folder, which you can deploy the folder to any hosting service you prefer.
-
-### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Astro-boilerplate)
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-| `npm run clean`   | Remove `./dist` folder                       |
-| `npm run lint`    | Run ESLint and report styling error          |
-
 ### Contributions
 
 Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
 
 ### License
 
-Licensed under the MIT License, Copyright © 2022
-
----
-
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+Licensed under the MIT License, Copyright © 2024
