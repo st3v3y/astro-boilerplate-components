@@ -1,7 +1,3 @@
-import type { ReactNode } from 'react';
-
-import type { Values } from '../types/TypeUnion';
-
 export const ColorTags = {
   SLATE: 'SLATE',
   GRAY: 'GRAY',
@@ -27,12 +23,7 @@ export const ColorTags = {
   ROSE: 'ROSE',
 } as const;
 
-type ITagsProps = {
-  color: Values<typeof ColorTags>;
-  children: ReactNode;
-};
-
-const colorToClassMap = {
+export const colorToClassMap = {
   [ColorTags.SLATE]: 'bg-slate-400 text-slate-900',
   [ColorTags.GRAY]: 'bg-gray-400 text-gray-900',
   [ColorTags.ZINC]: 'bg-zinc-400 text-zinc-900',
@@ -56,15 +47,3 @@ const colorToClassMap = {
   [ColorTags.PINK]: 'bg-pink-400 text-pink-900',
   [ColorTags.ROSE]: 'bg-rose-400 text-rose-900',
 };
-
-const Tags = (props: ITagsProps) => (
-  <div
-    className={`rounded-md px-2 py-1 text-xs font-semibold ${
-      colorToClassMap[props.color]
-    }`}
-  >
-    {props.children}
-  </div>
-);
-
-export { Tags };

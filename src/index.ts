@@ -1,27 +1,28 @@
-import { BlogCard } from './components/BlogCard';
-import { BlogGallery } from './components/BlogGallery';
-import { FooterCopyright } from './components/FooterCopyright';
-import { GradientText } from './components/GradientText';
-import { HeroAvatar } from './components/HeroAvatar';
-import { HeroSocial } from './components/HeroSocial';
-import { Logo } from './components/Logo';
-import { NavbarTwoColumns } from './components/NavbarTwoColumns';
-import { NavMenu } from './components/NavMenu';
-import { NavMenuItem } from './components/NavMenuItem';
-import { NewerOlderPagination } from './components/NewerOlderPagination';
-import { Newsletter } from './components/Newsletter';
-import { PaginationHeader } from './components/PaginationHeader';
-import { PostContent } from './components/PostContent';
-import { PostHeader } from './components/PostHeader';
-import { Project } from './components/Project';
-import { Section } from './components/Section';
-import { ColorTags, Tags } from './components/Tags';
+import  BlogCard from './components/BlogCard.svelte';
+import  BlogGallery from './components/BlogGallery.svelte';
+import  FooterCopyright from './components/FooterCopyright.svelte';
+import  GradientText from './components/GradientText.svelte';
+import  HeroAvatar from './components/HeroAvatar.svelte';
+import  HeroSocial from './components/HeroSocial.svelte';
+import  Logo from './components/Logo.svelte';
+import  NavbarTwoColumns from './components/NavbarTwoColumns.svelte';
+import  NavMenu from './components/NavMenu.svelte';
+import  NavMenuItem from './components/NavMenuItem.svelte';
+import  NewerOlderPagination from './components/NewerOlderPagination.svelte';
+import  Newsletter from './components/Newsletter.svelte';
+import  PaginationHeader from './components/PaginationHeader.svelte';
+import  PostContent from './components/PostContent.svelte';
+import  PostHeader from './components/PostHeader.svelte';
+import  Project from './components/Project.svelte';
+import  Section from './components/Section.svelte';
+import  Tags from './components/Tags.svelte';
 import type {
   FrontmatterPage,
   IFrontmatter,
   MarkdownInstance,
   Page,
 } from './types/IFrontMatter';
+import { ColorTags } from './types/ColorTags';
 
 export {
   type FrontmatterPage,
